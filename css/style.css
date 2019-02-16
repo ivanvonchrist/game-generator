@@ -6,11 +6,11 @@ html, body {
     margin: 0;
     padding: 0; }
 
-#r_idea, #btn, #footer {
-    font-size: 2em; }
+#r_idea, #btn {
+    font-size: 2rem; }
 
 #footer {
-    font-size: 1em; }
+    font-size: 1rem; }
 
 #container {
 	position: relative;
@@ -48,7 +48,8 @@ html, body {
 #r_idea {
 	padding: 1.5em 0;
 	max-width: 80%;
-	margin: auto; }
+	margin: auto;
+    overflow: auto; }
 
 #r_roll {
 	margin: 0 auto; }
@@ -59,12 +60,13 @@ html, body {
     position: absolute;
     bottom: 1.5em;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    clear: both: }
 
 /* Image Styling */
 
 img {
-    width: 25%;
+    width: 30%;
     height: auto; }
 
 /* Button Style */
@@ -96,3 +98,9 @@ a { color: white; }
 
 #preload {
     display: none; } /* Hide the pre-load div */
+
+@media (max-width: 768px) {
+    #r_idea, #btn {
+    font-size: 1.2rem; }
+    #footer {
+    font-size: 0.8rem; }}
